@@ -14,7 +14,7 @@ app.use("/shop", shopAPI(shop));
 app.use(errorHandler);
 
 app.get("/", (req, res) => {
-	res.send("Atsiskaitymas 1. API: localhost:3000/shop");
+	res.send("Atsiskaitymas 1. API: localhost/shop");
 });
 
 app.listen(3000, function() {
