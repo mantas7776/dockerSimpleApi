@@ -74,6 +74,8 @@ export default function shopAPI(shop: Shop) {
 		let item = bodyValidation.value;
 		let itemWithId = { ...item, id: params.id };
 
+		if (shop.findId(params.id) == null) throw new HTTPError(404, "Item not found");
+
 		shop.update(itemWithId);
 
 		res.end();
