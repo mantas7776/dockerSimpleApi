@@ -1,6 +1,9 @@
 # dockerSimpleApi
 
+Startup:
+
 ```
-docker build -t server .
-docker run -p 3000:3000 server
+docker-compose up
 ```
+
+Api endpoint at 80 port at /shop
